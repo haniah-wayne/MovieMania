@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMania | Delete Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="banner">
+            <h1>MovieMania</h1>
+            <p>A clean movie review database interface</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Main Page</a>
+            <a href="entry.html">Data Entry</a>
+            <a href="delete.html" class="active">Delete Data</a>
+            <a href="update.html">Update Data</a>
+            <a href="summary.html">Summary</a>
+            <a href="documentation.html">Documentation</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="panel">
+            <h2>Delete Data Page</h2>
+            <p class="section-subtitle">Search for entries to remove.</p>
+
+            <form class="form-grid">
+                <div class="form-group">
+                    <label for="delete-user">Name of the User <span style="color:#f2b5b5;">(required)</span></label>
+                    <input type="text" id="delete-user" name="delete-user" placeholder="Enter user name">
+                </div>
+
+                <div class="form-group">
+                    <label for="delete-movie">Movie Name <span style="color:#b8c0b8;">(optional)</span></label>
+                    <input type="text" id="delete-movie" name="delete-movie" placeholder="Enter movie title">
+                </div>
+
+                <div class="button-row">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+            <section class="results-section">
+                <h3>Matching Reviews</h3>
+
+                <div class="result-list">
+                    <div class="result-item">
+                        <div class="icon-box">×</div>
+                        <div class="result-content">
+                            <p><strong>User:</strong> Sarah Ahmed</p>
+                            <p><strong>Movie:</strong> Inception</p>
+                            <p><strong>Genre:</strong> Sci-Fi</p>
+                            <p><strong>Rating:</strong> 5/5</p>
+                            <p><strong>Description:</strong> Mind-bending</p>
+                        </div>
+                    </div>
+
+                    <div class="popup-demo">
+                        <h4>Delete Confirmation Popup Demo</h4>
+                        <p>Are you sure you want to delete this entry?</p>
+                        <div class="popup-buttons">
+                            <button class="btn btn-danger" type="button">Yes</button>
+                            <button class="btn btn-primary" type="button">No</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="note">
+                Static version: the X icon, popup, and delete action are visual only for now.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        MovieMania static front-end prototype
+    </footer>
+
+</body>
+</html>
