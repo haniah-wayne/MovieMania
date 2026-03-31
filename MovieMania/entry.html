@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMania | Data Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="banner">
+            <h1>MovieMania</h1>
+            <p>A clean movie review database interface</p>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Main Page</a>
+            <a href="entry.html" class="active">Data Entry</a>
+            <a href="delete.html">Delete Data</a>
+            <a href="update.html">Update Data</a>
+            <a href="summary.html">Summary</a>
+            <a href="documentation.html">Documentation</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="panel">
+            <h2>Data Entry Page</h2>
+            <p class="section-subtitle">Enter movie review information below.</p>
+
+            <form class="form-grid">
+                <div class="form-group">
+                    <label for="username">Name of the User</label>
+                    <input type="text" id="username" name="username" placeholder="Enter user name">
+                </div>
+
+                <div class="form-group">
+                    <label for="movie">Name of the Movie the User is Reviewing</label>
+                    <input type="text" id="movie" name="movie" placeholder="Enter movie title">
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Genre of the Movie</label>
+                    <input type="text" id="genre" name="genre" placeholder="Enter genre">
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating of the Movie out of 5</label>
+                    <input type="text" id="rating" name="rating" placeholder="Example: 4.5">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">One Word or Short Phrase to Describe the Movie</label>
+                    <input type="text" id="description" name="description" placeholder="Example: emotional, intense, beautiful">
+                </div>
+
+                <div class="button-row">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+            <div class="note">
+                Static front-end only: this button does not connect to a backend yet.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        MovieMania static front-end prototype
+    </footer>
+
+</body>
+</html>
