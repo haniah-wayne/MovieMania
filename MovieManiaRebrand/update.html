@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMania | Update Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="banner">
+            <h1>MovieMania</h1>
+            <p>A movie review database interface</p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Main Page</a>
+            <a href="entry.html">Data Entry</a>
+            <a href="delete.html">Delete Data</a>
+            <a href="update.html" class="active">Update Data</a>
+            <a href="summary.html">Summary</a>
+            <a href="documentation.html">Documentation</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Update <em>Data</em></h2>
+                <p class="section-subtitle">Search for entries and edit individual values</p>
+            </div>
+            <div class="panel-body">
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label for="update-user">Reviewer Name <span class="req">*</span></label>
+                        <input type="text" id="update-user" name="update-user" placeholder="Enter user name">
+                    </div>
+                    <div class="form-group">
+                        <label for="update-movie">Movie Title <span class="opt">(optional)</span></label>
+                        <input type="text" id="update-movie" name="update-movie" placeholder="Enter movie title">
+                    </div>
+                    <div class="button-row">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="reset" class="btn btn-ghost">Clear</button>
+                    </div>
+                </form>
+
+                <section class="results-section">
+                    <h3>Matching Reviews — click any field to edit</h3>
+                    <div class="result-list">
+                        <div class="result-item">
+                            <div class="icon-box edit">✎</div>
+                            <div>
+                                <span class="clickable-value">Reviewer: Sarah Ahmed</span>
+                                <span class="clickable-value">Movie: Inception</span>
+                                <span class="clickable-value">Genre: Sci-Fi</span>
+                                <span class="clickable-value">Rating: 5/5</span>
+                                <span class="clickable-value">Verdict: Mind-bending</span>
+                            </div>
+                        </div>
+
+                        <div class="popup-demo">
+                            <h4>Edit Field</h4>
+                            <div class="form-group" style="margin-top:6px;">
+                                <label for="new-value">New Value</label>
+                                <input type="text" id="new-value" name="new-value" placeholder="Type updated value here">
+                            </div>
+                            <div class="popup-buttons">
+                                <button class="btn btn-primary" type="button">Save Change</button>
+                                <button class="btn btn-ghost" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="note">
+                    Static version — clickable values and edit popup are visual only for now.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>MovieMania</span>
+        <span>Static front-end prototype</span>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMania | Data Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="banner">
+            <h1>MovieMania</h1>
+            <p>A movie review database interface</p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Main Page</a>
+            <a href="entry.html" class="active">Data Entry</a>
+            <a href="delete.html">Delete Data</a>
+            <a href="update.html">Update Data</a>
+            <a href="summary.html">Summary</a>
+            <a href="documentation.html">Documentation</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Data <em>Entry</em></h2>
+                <p class="section-subtitle">Submit a new movie review</p>
+            </div>
+            <div class="panel-body">
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label for="username">Reviewer Name</label>
+                        <input type="text" id="username" name="username" placeholder="e.g. Sarah Ahmed">
+                    </div>
+                    <div class="form-group">
+                        <label for="movie">Movie Title</label>
+                        <input type="text" id="movie" name="movie" placeholder="e.g. Inception">
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre" name="genre" placeholder="e.g. Sci-Fi, Drama, Horror">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating <span class="opt">(out of 5)</span></label>
+                        <input type="text" id="rating" name="rating" placeholder="e.g. 4.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">One-Word Verdict</label>
+                        <input type="text" id="description" name="description" placeholder="e.g. emotional, intense, beautiful">
+                    </div>
+                    <div class="button-row">
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                        <button type="reset" class="btn btn-ghost">Clear</button>
+                    </div>
+                </form>
+
+                <div class="note">
+                    Static front-end only — submit does not connect to a backend yet.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>MovieMania</span>
+        <span>Static front-end prototype</span>
+    </footer>
+
+</body>
+</html>
